@@ -21,10 +21,7 @@ public class Operational_getWrappedElement {
 		WebElement dropdown = driver.findElement(By.xpath("(//select[@id='select-multiple-native'])[1]"));	
 		
 		Select s1=new Select(dropdown);		//Select class is used to handle the dropdown
-		s1.selectByIndex(4);
-		s1.selectByIndex(1);
-		s1.selectByIndex(2);
-				
+		
 	// To fetch all the options present inside dropdown into single webElement
 		WebElement wrap = s1.getWrappedElement();	
 		

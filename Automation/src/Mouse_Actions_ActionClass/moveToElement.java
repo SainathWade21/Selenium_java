@@ -19,12 +19,9 @@ public static void main(String[] args) throws InterruptedException {
 		//create the object of Actions class
 		Actions act = new Actions(driver);
 		
+		// Mouse over on Fashion WebElement
 		WebElement element = driver.findElement(By.xpath("//span[text()='Fashion']"));
 		act.moveToElement(element).perform();
 		
 	}
-
-
-
-
 }
